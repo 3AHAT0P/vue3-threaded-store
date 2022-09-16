@@ -1,8 +1,4 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from '@/components/HelloWorld.vue'
-</script>
+<script setup></script>
 
 <template>
   <div>
@@ -13,7 +9,13 @@ import HelloWorld from '@/components/HelloWorld.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <h1>Hello App!</h1>
+  <p>
+    <router-link to="/first">Go to First</router-link>
+    <div style="display: inline-block; width: 100px"></div>
+    <router-link to="/second">Go to Second</router-link>
+  </p>
+  <router-view></router-view>
 </template>
 
 <style scoped>

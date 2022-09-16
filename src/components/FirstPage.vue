@@ -22,7 +22,7 @@ const wUpdate = () => {
     <button type="button" @click="wUpdate">update from worker! count is {{ count }}</button>
     <p>
       Edit
-      <code>components/HelloWorld.vue</code> to test HMR
+      <code>components/FirstPage.vue</code> to test HMR
     </p>
   </div>
 
