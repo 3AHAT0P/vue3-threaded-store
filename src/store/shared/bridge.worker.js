@@ -8,11 +8,11 @@ import {
 } from '../modules/counter.js';
 
 const cache = {
-  'counter::count': count,
+  [count._key]: count,
 };
 
 const registeredRefs = {
-  'counter::count': count,
+  [count._key]: count,
 };
 
 const registeredActions = {

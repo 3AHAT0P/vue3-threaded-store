@@ -3,6 +3,7 @@ import { sendToPorts, sendToPortsExceptCurrent } from './send.worker.js';
 export const ref = (key, initialValue) => {
   let _value = initialValue;
   return {
+    _key: key,
     get value() {
       return _value;
     },
